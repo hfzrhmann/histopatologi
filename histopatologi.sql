@@ -132,6 +132,12 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
+-- Dumping data untuk tabel `users`
+--
+
+INSERT INTO `users` (`id`, `nama`, `username`, `password`, `email`, `role`, `created_at`, `updated_at`) VALUES
+(1, 'admin', 'admin', '$2y$10$8ymPSmIGHINnTrHiVLQxqOcOlt8yTQB2TMKMo47HxknRxfhgPJ35q', 'admin@gmaill.com', 'admin', '2025-12-15 06:21:11', '2025-12-15 06:21:11');
+--
 -- Indexes for dumped tables
 --
 
