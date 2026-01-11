@@ -1,0 +1,11 @@
+Options -MultiViews
+
+RewriteEngine On
+
+# JANGAN rewrite file atau folder static
+RewriteCond %{REQUEST_FILENAME} -d [OR]
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ - [L]
+
+# Rewrite semua URL lain ke index.php
+RewriteRule ^(.*)$ index.php?url=$1 [L]
